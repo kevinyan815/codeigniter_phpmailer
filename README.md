@@ -9,18 +9,21 @@ More detail about PHPMailer https://github.com/PHPMailer/PHPMailer
 
 Simple example:
 
-#in controller or model, load this library
+//in controller or model, load this library
 $this->load->library('Mailer');
 
 $email = "address@example.com";
 $subject = "This is subject";
-$content_html = "<div>test code</div>"
-#send mail using smtp
-#if you need set properties like 'cc', 'Bcc', 'replyTo'
-#you can set it directly like
-#$this->mailer->From ='';
-#$this->mailer->cc = '';
-#$this->mailer->replyTo ='';
+$content_html = "&lt;div&gt;test code&lt;/div&gt;"
+
+//send mail using smtp
+//if you need set properties like 'cc', 'Bcc', 'replyTo'
+//you can set it directly like
+//$this->mailer->From ='';
+//$this->mailer->cc = '';
+//$this->mailer->replyTo ='';
+
+
 $this->mailer->smtp_send($email, $subject, $content_html);
 
 
