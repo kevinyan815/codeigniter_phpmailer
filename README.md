@@ -1,6 +1,6 @@
-This example show you the code integrating PHPMailer into CodeIgnitor Framework.
+This example show you the code integrating PHPMailer into CodeIgniter Framework.
 
-CodeIgnitor's Email class and PHP's mail() function both based on local mail server,
+CodeIgniter's Email class and PHP's mail() function both based on local mail server,
 and to some group it's a little bit complicated to build their own mail server, so 
 maybe PHPMailer is a appropriate choice .
 
